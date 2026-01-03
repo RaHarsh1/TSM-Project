@@ -2,8 +2,8 @@ const mongoose = require('mongoose');
 
 const connectDB = async () => {
     try {
-        // Use process.env.MONGO_URI instead of the hardcoded string
-        const conn = await mongoose.connect(process.env.MONGO_URI);
+     
+       const conn = await mongoose.connect('mongodb://localhost:27017/tsm');
         
         console.log(` MongoDB Connected: ${conn.connection.host}`);
     } catch (error) {

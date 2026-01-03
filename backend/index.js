@@ -1,13 +1,13 @@
 const express = require("express");
-const dotenv = require("dotenv");
+
 const connectDB = require("./config/db.js"); // Import the function
 const packageRoutes = require("./routes/packageRoutes.js");
 const authRouts = require("./routes/authRoutes.js");
 const path = require("path");
 const app = express();
-const PORT = process.env.PORT || 5000;
+const PORT = 5000;
 
-dotenv.config();
+
 
 // 1. Connect to Database
 connectDB();
