@@ -31,7 +31,7 @@ const Hompage = () => {
             <div className="col-md-10 col-lg-8 text-center text-white">
               {/* The Text Above the Image */}
               <h1 className="display-4 fw-bold mb-3">
-                Explore the World with TSM
+                <u>Explore the World with TSM</u>
               </h1>
               <p className="lead mb-5">
                 Find the best deals on domestic and international tours.
